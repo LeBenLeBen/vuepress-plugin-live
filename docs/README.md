@@ -68,12 +68,10 @@ If your examples are jsx vue components, use an extra jsx flag
 ````md
 ```jsx jsx live
 export default {
-  render(){
-    return <vue-slider
-      value={37}
-    />
-  }
-}
+  render() {
+    return <vue-slider value={37} />;
+  },
+};
 ```
 ````
 
@@ -85,21 +83,21 @@ The script would be incomplete.
 
 ```jsx jsx live
 export default {
-  data(){
+  data() {
     return {
-      value: 37
-    }
+      value: 37,
+    };
   },
-  render(){
+  render() {
     return (
       <div>
         <vue-slider
-          style={{margin: "20px 0"}}
+          style={{ margin: "20px 0" }}
           value={this.value}
           order={false}
         />
       </div>
-    )
-  }
-}
+    );
+  },
+};
 ```

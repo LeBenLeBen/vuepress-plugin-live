@@ -1,9 +1,9 @@
-<template functional>
+<template>
   <div class="preview-code">
     <div class="preview block">
       <slot name="preview"></slot>
     </div>
-    <div :class="`language-${props.lang} editor block`">
+    <div :class="`language-${$props.lang} editor block`">
       <slot name="editor"></slot>
     </div>
   </div>
@@ -13,7 +13,9 @@
 import "prismjs/themes/prism-tomorrow.css";
 import "vue-prism-editor/dist/prismeditor.min.css";
 
-export default {};
+export default {
+  props: ['lang']
+};
 </script>
 
 <style>

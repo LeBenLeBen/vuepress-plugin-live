@@ -1,8 +1,10 @@
 const path = require("path");
+
 module.exports = {
   dest: "docs/dist",
   title: "VuePress Live",
   description: "Demo site of the VuePress-live plugin",
+  debug: true,
   themeConfig: {
     repo: "vue-styleguidist/vuepress-plugin-live",
     editLinks: true,
@@ -11,7 +13,6 @@ module.exports = {
     sidebar: ["/", "/Install.md"],
   },
   plugins: [
-    ["code-copy", { selector: `div:not(.editor)[class*="language-"] pre` }],
     [
       require("../../index"),
       {
@@ -22,17 +23,6 @@ module.exports = {
         // that can't be server side rendered
         // so I use the noSsr flag to avoid the "document is not defined" error
         noSsr: true,
-      },
-    ],
-    [
-      "@vuepress/register-components",
-      {
-        components: [
-          {
-            name: "vue-slider",
-            path: path.resolve(__dirname, "../vue-slider"),
-          },
-        ],
       },
     ],
   ],

@@ -1,5 +1,7 @@
 # build artefacts
 /docs/dist/
+/docs/.vuepress/.cache
+/docs/.vuepress/.temp
 
 # Logs
 logs

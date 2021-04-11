@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "npm run docs",
-    "docs": "vuepress dev docs --no-clear-screen",
+    "docs": "vuepress dev docs",
     "docs:build": "vuepress build docs"
   },
   "repository": {
@@ -26,20 +26,14 @@
   },
   "homepage": "http://vuepress-live.surge.sh/",
   "devDependencies": {
-    "@vuepress/plugin-register-components": "^1.6.0",
-    "@vuepress/theme-default": "^1.6.0",
     "lodash": "^4.17.11",
-    "lodash.throttle": "^4.1.1",
     "validate-commit-msg": "^2.14.0",
-    "vue-slider-component": "^3.0.31",
-    "vuepress": "^1.6.0",
-    "vuepress-plugin-code-copy": "^1.0.6",
-    "vuepress-plugin-container": "^2.1.5"
+    "vue-slider-component": "^4.0.0-beta.3",
+    "vuepress": "^2.0.0-beta.8"
   },
   "dependencies": {
     "acorn": "^6.1.1",
-    "vue-live": "^1.14.2",
-    "vue-no-ssr": "^1.1.1",
+    "vue-live": "^2.0.0-alpha.5",
     "walkes": "^0.2.1"
   }
 }
